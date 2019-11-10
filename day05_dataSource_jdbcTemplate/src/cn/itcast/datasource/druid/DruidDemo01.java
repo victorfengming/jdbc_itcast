@@ -16,13 +16,13 @@ import java.util.Properties;
  * @created 2019-11-10 14:19
  * @function "Druid演示"
  */
-public class DruidDemo {
+public class DruidDemo01 {
     public static void main(String[] args) throws Exception {
         // 1.导入jar包
         //2.定义配置文件
         // 3. 加载配置文件
         Properties pro = new Properties();
-        InputStream is = DruidDemo.class.getClassLoader().getResourceAsStream("druid.properties");
+        InputStream is = DruidDemo01.class.getClassLoader().getResourceAsStream("druid.properties");
         pro.load(is);
         //4.获取连接池对象
         DataSource ds = DruidDataSourceFactory.createDataSource(pro);
